@@ -1,0 +1,145 @@
+/* Estilos generales para el body */
+body {
+    font-family: Arial, sans-serif; /* Tipo de fuente */
+    background-color: #f4f4f9; /* Color de fondo */
+    display: flex; /* Usamos flexbox para centrar el contenido */
+    justify-content: center; /* Centro en el eje principal */
+    align-items: center; /* Centro en el eje transversal */
+    flex-direction: column; /* Alineación en columna */
+    margin: 0; /* Elimina el margen predeterminado */
+    height: 100vh; /* Altura completa de la ventana */
+    padding: 20px; /* Espacio alrededor */
+    box-sizing: border-box; /* Incluye el padding y el borde dentro del ancho y alto */
+}
+
+/* Barra de navegación */
+.nav {
+    background: #ffe900; /* Color de fondo */
+    padding: 20px 3%; /* El primer valor determina el relleno superior e inferior mientras que el segundo valor establece el relleno derecho e izquierdo */
+    text-align: right; /* Alinea el texto al lado derecho */
+    width: 100%; /* Ancho completo de la pantalla */
+    box-sizing: border-box; /* Incluye el padding dentro del ancho */
+    font-size: 1.2em; /* Tamaño de fuente más grande para mejor visibilidad */
+}
+
+/* Estilos de los encabezados */
+h1 {
+    font-size: 2.5em; /* Tamaño de fuente */
+    text-align: center; /* Alinea el texto al centro */
+    margin-top: 20px; /* Ajuste de margen superior */
+}
+
+h2 {
+    font-size: 2em; /* Tamaño de fuente */
+    text-align: center; /* Alinea el texto al centro */
+    margin-top: 10px; /* Ajuste de margen superior */
+}
+
+/* Contenedor principal */
+.container {
+    background-color: #fff;
+    padding: 40px 3%; /* Aumenta el padding */
+    border-radius: 10px;
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%; /* Ancho completo */
+    max-width: 1200px; /* Limita el ancho máximo a 1200px */
+    box-sizing: border-box;
+    transition: width 0.5s ease; /* Transición suave para cambio de ancho */
+}
+
+/* Estilos de las imágenes */
+.logo2, .logo3 {
+    width: 120px; /* Tamaño de la imagen */
+    height: auto; /* Mantiene la proporción */
+    object-fit: contain;
+}
+
+.logo2 {
+    margin-left: 5%; /* Espacio alrededor */
+    margin-top: 1%;
+}
+
+.logo3 {
+    margin-left: 40%; /* Espacio alrededor */
+}
+
+/* Título del contenedor */
+h3 {
+    font-size: 1.8em; /* Tamaño de fuente */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+/* Estilos del botón de selección de archivo */
+.file-label {
+    padding: 10px 20px;
+    background-color: #ffe900;
+    color: #333; /* Texto en gris oscuro */
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block; /* Para que tome el tamaño correcto */
+    margin-bottom: 10px; /* Espacio debajo del botón */
+    font-size: 1.1em; /* Tamaño de fuente */
+}
+
+/* Estilo del nombre del archivo */
+#fileName {
+    margin-left: 10px;
+    font-size: 1.1em; /* Tamaño de fuente */
+    vertical-align: middle;
+}
+
+/* Estilo para ocultar el input de archivo */
+.hidden {
+    position: absolute;
+    left: -9999px; /* Lo mantiene fuera de la pantalla */
+}
+
+/* Estilos del botón principal */
+.btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #0e437d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em; /* Tamaño de fuente */
+}
+
+/* Estilo del botón volver */
+.btnvolver {
+    margin-top: 5px;
+    padding: 10px 20px;
+    background-color: #0e437d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em; /* Tamaño de fuente */
+}
+
+/* Ajustes adicionales para tamaños de pantalla grandes */
+@media (min-width: 1000px) {
+    .container {
+        width: 50%; /* La mitad del ancho de la pantalla */
+    }
+
+    h1 {
+        font-size: 3em; /* Tamaño de fuente mayor para el título */
+    }
+
+    h2 {
+        font-size: 2.5em; /* Tamaño de fuente mayor para el subtítulo */
+    }
+
+    .logo2, .logo3 {
+        width: 150px; /* Tamaño mayor de la imagen */
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        width: 100%; /* Ancho completo en pantallas grandes */
+    }
+}

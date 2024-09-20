@@ -1,20 +1,19 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    justify-content: center;
-    align-items: center;
+    font-family: Arial, sans-serif; /* Tipo de fuente */
+    background-color: #f4f4f9; /* Color de fondo */
+    justify-content: center; /* Controla la alineación de todos los elementos en el eje principal */
+    align-items: center; /* Controla la alineación de todos los elementos en el eje transversal */
 }
 .nav{
-    background: #ffe900;
-    color: #0e437d;
-    padding:  20px 3%;
-    text-align: right;
+    background: #ffe900; /* Color de fondo */
+    padding:  20px 3%; /* El primer valor determina el relleno superior e inferior mientras que el segundo valor establece el relleno derecho e izquierdo */
+    text-align: right; /* Alinea el texto al lado derecho */
 }
 
 h1 {
-    font-size: 80px;
-    text-align: center;
-    margin-top: -60px;
+    font-size: 80px; /* Tamaño de fuente */
+    text-align: center; /* Alinea el texto al lado centro */
+    margin-top: -60px; /* Margen superior */
 }
 
 h2 {
@@ -67,11 +66,22 @@ h3 {
 
 .hidden {
     position: absolute;
-    left: -9999px; /* Mantenerlo fuera de la pantalla */
+    left: -9999px; /* Lo mantiene fuera de la pantalla */
 }
 
 .btn {
     margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #0e437d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btnvolver {
+    margin-top: 5px;
     padding: 10px 20px;
     background-color: #0e437d;
     color: white;
